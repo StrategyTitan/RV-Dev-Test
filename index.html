@@ -301,17 +301,16 @@
                     <img id="logo" src="https://www.strategytitan.com/files/theme/images/strategy-titan-logo-white.png"/>  
                 </div>
                 <div id="USA-title">Top 10 RV MSA’s</div>
-                <div style="margin-top: 1em; text-align: center; text-transform: uppercase; font-size: 1.1em">DATA THRU JULY 2020</div>
+                <div style="margin-top: 1em; text-align: center; text-transform: uppercase; font-size: 1.1em">DATA THRU OCTOBER 2020</div>
                 <div style="margin-top: 1em; text-align: center; font-size: 1.0em">
                     <i>
                         <strong>Source:</strong>&nbsp;SSI
                         <div style="margin-top: 0.5rem">
-                            Each MSA is shaded based on their YTD (thru July 2020) unit growth rate % vs YTD 2019.
+                            Rankings are based on rolling 12 month unit growth figures vs the prior 12 months.
+                            Each MSA is shaded based on their rolling 12 month unit growth rate %. Growth Period: November 2019 to October 2020
                         </div>
                         <div style="margin-top: 0.5rem">
-                            Note: Oregon and Arizona MSA’s have been excluded due to July vehicle registration delays. As soon as this issue is
-                            resolved we will include these states. Missouri also has delays, but has remained in place due to delays having a smaller
-                            impact on YTD figures.
+                            Get our 2021 RV retail forecast or request a complimentary dealership market share analysis <a href="https://www.strategytitan.com/">here</a>.   
                         </div>
                     </i>
                 </div> 
@@ -388,7 +387,7 @@
                     bounds:         [[-126.960, 24.394],[-65.117, 50.034]],
                     data:           {},
                 },
-                "Indianapolis-Carmel-Anderson, IN (ICA)": {
+                "Los Angeles-Long Beach-Anaheim, CA": {
                     camera: {
                         duration:   3000,
                         center:     [-86.120, 39.652],
@@ -397,23 +396,23 @@
                     },
                     bounds:         [[-88.45886934944271,41.83153694271266],[-88.17601395569697,42.009466044631495]],
                     data:   {
-                        CBSA:                   26900,
+                        CBSA:                   31080,
                         cityJobsInManufPerc:    22,
                         description:            "ICA growth has been fueled by both strong performance in the travel trailer (+26%) segment. This market has been performing well thru 2020 and appears poised to continue performing well thru Q1 2021.",
                         mayorQuote:             "--Mayor Quote Here--",
                         rank:                   10,
-                        title:                  "Indianapolis-Carmel-Anderson, IN (ICA)",
-                        natlUnitVolRank:        22,
+                        title:                  "Los Angeles-Long Beach-Anaheim, CA",
+                        natlUnitVolRank:        7,
                         percOfAllIlManufJobs:   0.9,
-                        ytdUnitGrowth:          19,
+                        ytdUnitGrowth:          15,
                         unemploymentYOY:        -1.5,
                         topSegments:            [
-                                                    { 'segment': 'Travel Trailer', ytdGrowth: 26 },
-                                                    { 'segment': 'Fifth Wheel', ytdGrowth: -4.0 },
-                                                    { 'segment': 'Camping Trailer', ytdGrowth: -2.3 },
-                                                    { 'segment': 'Class A', ytdGrowth: 3.0 },
-                                                    { 'segment': 'Class B', ytdGrowth: 60 },
-                                                    { 'segment': 'Class C', ytdGrowth: 7.0 },
+                                                    { 'segment': 'Travel Trailer', ytdGrowth: 16.7 },
+                                                    { 'segment': 'Fifth Wheel', ytdGrowth: 10.6 },
+                                                    { 'segment': 'Camping Trailer', ytdGrowth: 33.8 },
+                                                    { 'segment': 'Class A', ytdGrowth: -0.6 },
+                                                    { 'segment': 'Class B', ytdGrowth: 17.5 },
+                                                    { 'segment': 'Class C', ytdGrowth: 20.7 },
                                                 ],
                     },
                 }, 
@@ -733,7 +732,7 @@
                 natlUnitVolRankDiv.innerHTML = "National Unit Volume Rank: <span class=\"stat\">" + cityData.natlUnitVolRank.toLocaleString() + "</span>";
                 container1.appendChild(natlUnitVolRankDiv);
                 var ytdUnitGrowthDiv = document.createElement("div");
-                ytdUnitGrowthDiv.innerHTML =  "YTD (thru July 2020) Unit Growth Vs YTD Prior Year: <span class=\"stat\">" + cityData.ytdUnitGrowth + "%";
+                ytdUnitGrowthDiv.innerHTML =  "Rolling 12 month unit growth vs prior 12 months: <span class=\"stat\">" + cityData.ytdUnitGrowth + "%";
                 container1.appendChild(ytdUnitGrowthDiv);
                 sectionContentDiv.appendChild(container1);
 
