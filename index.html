@@ -408,13 +408,12 @@
                         ytdUnitGrowth:          15,
                         unemploymentYOY:        -1.5,
                         topSegments:            [
-                                                    { '(Growth % | National Rank)'},
-                                                    { 'segment': 'Travel Trailer', ytdGrowth: 16.7 },
-                                                    { 'segment': 'Fifth Wheel', ytdGrowth: 10.6 },
-                                                    { 'segment': 'Camping Trailer', ytdGrowth: 33.8 },
-                                                    { 'segment': 'Class A', ytdGrowth: -0.6 },
-                                                    { 'segment': 'Class B', ytdGrowth: 17.5 },
-                                                    { 'segment': 'Class C', ytdGrowth: 20.7 },
+                                                    { 'segment': 'Travel Trailer', ytdGrowth: 16.7 , '16'},
+                                                    { 'segment': 'Fifth Wheel', ytdGrowth: 10.6 , '16' },
+                                                    { 'segment': 'Camping Trailer', ytdGrowth: 33.8 , '16'},
+                                                    { 'segment': 'Class A', ytdGrowth: -0.6 , '16'},
+                                                    { 'segment': 'Class B', ytdGrowth: 17.5 , '16'},
+                                                    { 'segment': 'Class C', ytdGrowth: 20.7 , '16'},
                                                 ],
                     },
                 }, 
@@ -781,7 +780,7 @@
                 container5.classList.add("stats");
                 var topSegmentsDiv = document.createElement("div");
                 var topSegmentsTitleDiv = document.createElement("div");             
-                topSegmentsTitleDiv.innerHTML = "Rolling 12 Mth Growth By Product Type:";            
+                topSegmentsTitleDiv.innerHTML = "Rolling 12 Mth Growth & Nat'l Rank By Product Type:";            
                 topSegmentsDiv.appendChild(topSegmentsTitleDiv);
                 var topSegmentsUl = document.createElement("ul");
                 for (var j = 0; j < cityData.topSegments.length; j++) {
